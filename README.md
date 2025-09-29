@@ -6,6 +6,7 @@
 - [Multi-Level Network Based on Transformer Encoder for Fine-Grained Image-Text Matching](#multi-level-network-based-on-transformer-encoder-for-fine-grained-image-text-matching)
 - [Manifold and Patch-Based Unsupervised Deep Metric Learning for Fine-Grained Image Retrieval](#manifold-and-patch-based-unsupervised-deep-metric-learning-for-fine-grained-image-retrieval)
 - [DTSFNet: A Lightweight Network Based on Dynamic Sampling and Scale Sequence Fusion for Aerial Image Object Detection](#dtsfnet-a-lightweight-network-based-on-dynamic-sampling-and-scale-sequence-fusion-for-aerial-image-object-detection)
+- [Variational Adversarial Negative Sampling for Multimodal Knowledge Graph Completion](#variational-adversarial-negative-sampling-for-multimodal-knowledge-graph-completion)
 - [Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval](#fine-grained-information-supplementation-and-value-guided-learning-for-remote-sensing-image-text-retrieval)
 
 ## 算法
@@ -89,6 +90,10 @@
 
 ### DTSFNet: A Lightweight Network Based on Dynamic Sampling and Scale Sequence Fusion for Aerial Image Object Detection【暂无代码】
 本工作提出了一种基于动态采样和尺度序列融合的轻量级深度网络（dynamic sampling and scale sequence fusion, DTSFNet）。网络包含一个多尺度特征提取器（multiscale feature extractor, MSFE）模块，采用多种卷积核来降低模型复杂度，同时有效捕捉多尺度特征。此外，网络还包含了一个动态尺度序列融合（dynamic scale sequence fusion, DSSF）模块，对不同层级的多尺度特征进行全面探索和高效整合。本工作在三个公开可用的数据集（VisDrone2019、UVADT和DIOR）上对所提方法进行了评估。结果表明，本方法在实现轻量级模型的同时，保持了较高的检测精度。
+![# DTSFNet框架图](assets/DTSFNet_framework.png)
+* 模型效果
+![# DTSFNet_result1](assets/DTSFNet_result1.png)
+![# DTSFNet_result2](assets/DTSFNet_result2.png)
 * 引用
 ```bibtex
 @article{liao2025dtsfnet,
@@ -101,6 +106,14 @@
 }
 ```
 * 代码请见[DTSFNet]()
+
+### Variational Adversarial Negative Sampling for Multimodal Knowledge Graph Completion
+本工作提出基于变分对抗负采样的多模态知识图谱补全框架（VansKG）。该框架通过变分对抗负采样技术实现高效负样本训练，结合结构化查询与关系调节动态交叉注意力融合机制，构建以三元组为核心的多模态融合模型，显著提升整体补全效果。实验表明，VansKG在三个通用基准数据集上超越了18种先进方法，取得了最优性能表现。
+![# VansKG框架图](assets/VansKG_framework.png)
+* 模型效果
+![# VansKG_result1](assets/VansKG_result1.png)
+![# VansKG_result2](assets/VansKG_result2.png)
+* 代码请见[VansKG](https://github.com/vialstar/VansKG)
   
 ### Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval
 本工作提出了一种细粒度信息补充与价值引导学习（fine-grained information supplementation and value-guided learning, FISVL）模型，通过融合推荐系统领域的先验知识进行特征增强，并采用价值导向的训练策略学习细粒度、高表达性与鲁棒性兼具的特征表示。具体而言，本工作设计了以下核心模块：
