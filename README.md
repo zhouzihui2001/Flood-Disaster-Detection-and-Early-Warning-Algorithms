@@ -89,7 +89,8 @@
 ```
 * 代码请见[MPUDML](https://pan.baidu.com/s/1o35DaX4jlXr5UyFxKlJQdw?pwd=on12)
 
-### DTSFNet: A Lightweight Network Based on Dynamic Sampling and Scale Sequence Fusion for Aerial Image Object Detection【暂无代码】
+### DTSFNet: A Lightweight Network Based on Dynamic Sampling and Scale Sequence Fusion for Aerial Image Object Detection
+【暂无代码】
 本工作提出了一种基于动态采样和尺度序列融合的轻量级深度网络（dynamic sampling and scale sequence fusion, DTSFNet）。网络包含一个多尺度特征提取器（multiscale feature extractor, MSFE）模块，采用多种卷积核来降低模型复杂度，同时有效捕捉多尺度特征。此外，网络还包含了一个动态尺度序列融合（dynamic scale sequence fusion, DSSF）模块，对不同层级的多尺度特征进行全面探索和高效整合。本工作在三个公开可用的数据集（VisDrone2019、UVADT和DIOR）上对所提方法进行了评估。结果表明，本方法在实现轻量级模型的同时，保持了较高的检测精度。
 ![# DTSFNet框架图](assets/DTSFNet_framework.png)
 * 模型效果
@@ -117,7 +118,8 @@
 ![# VansKG_result2](assets/VansKG_result2.png)
 * 代码请见[VansKG](https://github.com/vialstar/VansKG)
 
-### ViLNM: Visual-Language Noise Modeling for Text-to-Image Person Retrieval【暂无代码】
+### ViLNM: Visual-Language Noise Modeling for Text-to-Image Person Retrieval
+【暂无代码】
 本工作提出视觉-语言噪声建模（Visual-Language Noise Modeling, ViLNM）方法，在存在噪声的情况下有效捕捉跨模态关联。具体来说，本工作设计了噪声标记感知（Noise Token Aware, NTA）模块，通过剔除文本描述中与图像不匹配的词汇，利用匹配词汇建立更可靠的关联。同时，为增强模型对不同人物身份的识别能力，本工作提出联合模态间/内对比损失（Intra-Modal Contrastive Loss, JII）与局部聚合（Local Aggregation, LA）模块，以提升不同人物身份间的特征差异。ViLNM在三个公开基准数据集上进行综合实验，均取得最佳表现。
 ![# ViLNM框架图](assets/ViLNM_framework.png)
 * 模型效果
