@@ -7,6 +7,7 @@
 - [Manifold and Patch-Based Unsupervised Deep Metric Learning for Fine-Grained Image Retrieval](#manifold-and-patch-based-unsupervised-deep-metric-learning-for-fine-grained-image-retrieval)
 - [DTSFNet: A Lightweight Network Based on Dynamic Sampling and Scale Sequence Fusion for Aerial Image Object Detection](#dtsfnet-a-lightweight-network-based-on-dynamic-sampling-and-scale-sequence-fusion-for-aerial-image-object-detection)
 - [Variational Adversarial Negative Sampling for Multimodal Knowledge Graph Completion](#variational-adversarial-negative-sampling-for-multimodal-knowledge-graph-completion)
+- [ViLNM: Visual-Language Noise Modeling for Text-to-Image Person Retrieval](#vilnm-visual-language-noise-modeling-for-text-to-image-person-retrieval)
 - [Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval](#fine-grained-information-supplementation-and-value-guided-learning-for-remote-sensing-image-text-retrieval)
 
 ## 算法
@@ -111,9 +112,29 @@
 本工作提出基于变分对抗负采样的多模态知识图谱补全框架（VansKG）。该框架通过变分对抗负采样技术实现高效负样本训练，结合结构化查询与关系调节动态交叉注意力融合机制，构建以三元组为核心的多模态融合模型，显著提升整体补全效果。实验表明，VansKG在三个通用基准数据集上超越了18种先进方法，取得了最优性能表现。
 ![# VansKG框架图](assets/VansKG_framework.png)
 * 模型效果
+
 ![# VansKG_result1](assets/VansKG_result1.png)
 ![# VansKG_result2](assets/VansKG_result2.png)
 * 代码请见[VansKG](https://github.com/vialstar/VansKG)
+
+### ViLNM: Visual-Language Noise Modeling for Text-to-Image Person Retrieval【暂无代码】
+本工作提出视觉-语言噪声建模（Visual-Language Noise Modeling, ViLNM）方法，在存在噪声的情况下有效捕捉跨模态关联。具体来说，本工作设计了噪声标记感知（Noise Token Aware, NTA）模块，通过剔除文本描述中与图像不匹配的词汇，利用匹配词汇建立更可靠的关联。同时，为增强模型对不同人物身份的识别能力，本工作提出联合模态间/内对比损失（Intra-Modal Contrastive Loss, JII）与局部聚合（Local Aggregation, LA）模块，以提升不同人物身份间的特征差异。ViLNM在三个公开基准数据集上进行综合实验，均取得最佳表现。
+![# ViLNM框架图](assets/ViLNM_framework.png)
+* 模型效果
+  
+![# ViLNM_result1](assets/ViLNM_result1.png)
+![# ViLNM_result2](assets/ViLNM_result2.png)
+* 引用
+```bibtex
+@article{xu2025vilnm,
+  title={ViLNM: Visual-Language Noise Modeling for Text-to-Image Person Retrieval},
+  author={Xu, Guolin and Feng, Yong and Chen, Yanying and Duan, Guofan and Zhou, Mingliang},
+  journal={IEEE Signal Processing Letters},
+  year={2025},
+  publisher={IEEE}
+}
+```
+* 代码请见[ViLNM]()
   
 ### Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval
 本工作提出了一种细粒度信息补充与价值引导学习（fine-grained information supplementation and value-guided learning, FISVL）模型，通过融合推荐系统领域的先验知识进行特征增强，并采用价值导向的训练策略学习细粒度、高表达性与鲁棒性兼具的特征表示。具体而言，本工作设计了以下核心模块：
