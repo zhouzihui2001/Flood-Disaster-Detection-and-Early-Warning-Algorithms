@@ -91,7 +91,6 @@
 * 代码请见[MPUDML](https://pan.baidu.com/s/1o35DaX4jlXr5UyFxKlJQdw?pwd=on12)
 
 ### DTSFNet: A Lightweight Network Based on Dynamic Sampling and Scale Sequence Fusion for Aerial Image Object Detection
-【暂无代码】
 本工作提出了一种基于动态采样和尺度序列融合的轻量级深度网络（dynamic sampling and scale sequence fusion, DTSFNet）。网络包含一个多尺度特征提取器（multiscale feature extractor, MSFE）模块，采用多种卷积核来降低模型复杂度，同时有效捕捉多尺度特征。此外，网络还包含了一个动态尺度序列融合（dynamic scale sequence fusion, DSSF）模块，对不同层级的多尺度特征进行全面探索和高效整合。本工作在三个公开可用的数据集（VisDrone2019、UVADT和DIOR）上对所提方法进行了评估。结果表明，本方法在实现轻量级模型的同时，保持了较高的检测精度。
 ![# DTSFNet框架图](assets/DTSFNet_framework.png)
 * 模型效果
@@ -108,7 +107,7 @@
   publisher={World Scientific}
 }
 ```
-* 代码请见[DTSFNet]()
+* 代码请见[DTSFNet](DTSFNet.zip)
 
 ### Variational Adversarial Negative Sampling for Multimodal Knowledge Graph Completion
 本工作提出基于变分对抗负采样的多模态知识图谱补全框架（VansKG）。该框架通过变分对抗负采样技术实现高效负样本训练，结合结构化查询与关系调节动态交叉注意力融合机制，构建以三元组为核心的多模态融合模型，显著提升整体补全效果。实验表明，VansKG在三个通用基准数据集上超越了18种先进方法，取得了最优性能表现。
