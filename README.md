@@ -9,6 +9,7 @@
 - [Variational Adversarial Negative Sampling for Multimodal Knowledge Graph Completion](#variational-adversarial-negative-sampling-for-multimodal-knowledge-graph-completion)
 - [ViLNM: Visual-Language Noise Modeling for Text-to-Image Person Retrieval](#vilnm-visual-language-noise-modeling-for-text-to-image-person-retrieval)
 - [Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval](#fine-grained-information-supplementation-and-value-guided-learning-for-remote-sensing-image-text-retrieval)
+- [Boundary-Aware Feature Fusion With Dual-Stream Attention for Remote Sensing Small Object Detection](#boundary-aware-feature-fusion-with-dual-stream-attention-for-remote-sensing-small-object-detection)
 
 ## 算法
 
@@ -119,7 +120,6 @@
 * 代码请见[VansKG](https://github.com/vialstar/VansKG)
 
 ### ViLNM: Visual-Language Noise Modeling for Text-to-Image Person Retrieval
-【暂无代码】
 本工作提出视觉-语言噪声建模（Visual-Language Noise Modeling, ViLNM）方法，在存在噪声的情况下有效捕捉跨模态关联。具体来说，本工作设计了噪声标记感知（Noise Token Aware, NTA）模块，通过剔除文本描述中与图像不匹配的词汇，利用匹配词汇建立更可靠的关联。同时，为增强模型对不同人物身份的识别能力，本工作提出联合模态间/内对比损失（Intra-Modal Contrastive Loss, JII）与局部聚合（Local Aggregation, LA）模块，以提升不同人物身份间的特征差异。ViLNM在三个公开基准数据集上进行综合实验，均取得最佳表现。
 ![# ViLNM框架图](assets/ViLNM_framework.png)
 * 模型效果
@@ -136,7 +136,7 @@
   publisher={IEEE}
 }
 ```
-* 代码请见[ViLNM]()
+* 代码请见[ViLNM](ViLNM.zip)
   
 ### Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval
 本工作提出了一种细粒度信息补充与价值引导学习（fine-grained information supplementation and value-guided learning, FISVL）模型，通过融合推荐系统领域的先验知识进行特征增强，并采用价值导向的训练策略学习细粒度、高表达性与鲁棒性兼具的特征表示。具体而言，本工作设计了以下核心模块：
@@ -160,3 +160,22 @@
 }
 ```
 * 代码请见[FISVL-pytorch](https://github.com/zhouzihui2001/FISVL)
+
+### Boundary-Aware Feature Fusion With Dual-Stream Attention for Remote Sensing Small Object Detection
+本工作提出了边界感知特征融合网络（BAFNet）框架，显著提升了模型在复杂遥感场景中精准表征和定位小型物体的能力。首先，本工作提出双流注意力融合模块，通过双向上下文建模捕捉互补的前景与背景线索。此外，本工作引入边界感知分支，以更好地保留小尺度物体的关键细节信息。这一辅助组件监督上下文语义与空间信息的融合，有助于保留易在跨层特征融合过程中丢失的重要边界细节。本工作在具有挑战性的AI-TOD、VisDrone、DIOR和LEVIR-Ship数据集上进行实验，结果表明该框架具有显著优势。
+![# BAFNet框架图](assets/BAFNet_framework.png)
+* 模型效果
+  
+![# BAFNet_result1](assets/BAFNet_result1.png)
+![# BAFNet_result2](assets/BAFNet_result2.png)
+* 引用
+```bibtex
+@article{song2024boundary,
+  title={Boundary-aware feature fusion with dual-stream attention for remote sensing small object detection},
+  author={Song, Jingnan and Zhou, Mingliang and Luo, Jun and Pu, Huayan and Feng, Yong and Wei, Xuekai and Jia, Weijia},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  year={2024},
+  publisher={IEEE}
+}
+```
+* 代码请见[FISVL-pytorch](https://github.com/ooo1128/BAFNet)
