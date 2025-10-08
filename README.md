@@ -162,7 +162,7 @@
 * 代码请见[FISVL-pytorch](https://github.com/zhouzihui2001/FISVL)
 
 ### Boundary-Aware Feature Fusion With Dual-Stream Attention for Remote Sensing Small Object Detection
-本工作提出了边界感知特征融合网络（BAFNet）框架，显著提升了模型在复杂遥感场景中精准表征和定位小型物体的能力。首先，本工作提出双流注意力融合模块，通过双向上下文建模捕捉互补的前景与背景线索。此外，本工作引入边界感知分支，以更好地保留小尺度物体的关键细节信息。这一辅助组件监督上下文语义与空间信息的融合，有助于保留易在跨层特征融合过程中丢失的重要边界细节。本工作在具有挑战性的AI-TOD、VisDrone、DIOR和LEVIR-Ship数据集上进行实验，结果表明该框架具有显著优势。
+本工作提出了边界感知特征融合网络（boundary-aware feature fusion network, BAFNet）框架，显著提升了模型在复杂遥感场景中精准表征和定位小型物体的能力。首先，本工作提出双流注意力融合模块，通过双向上下文建模捕捉互补的前景与背景线索。此外，本工作引入边界感知分支，以更好地保留小尺度物体的关键细节信息。这一辅助组件监督上下文语义与空间信息的融合，有助于保留易在跨层特征融合过程中丢失的重要边界细节。本工作在具有挑战性的AI-TOD、VisDrone、DIOR和LEVIR-Ship数据集上进行实验，结果表明该框架具有显著优势。
 ![# BAFNet框架图](assets/BAFNet_framework.png)
 * 模型效果
   
@@ -178,4 +178,4 @@
   publisher={IEEE}
 }
 ```
-* 代码请见[FISVL-pytorch](https://github.com/ooo1128/BAFNet)
+* 代码请见[BAFNet](https://github.com/ooo1128/BAFNet)
